@@ -22,3 +22,9 @@ You need your own copy of Minecraft: Java Edition. By downloading you agree to t
 and have read the Privacy Policy (https://fernclient.net/terms, https://fernclient.net/privacy).
 
 Fern Client is not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.
+
+## For the launcher
+
+`manifest.json` lists the current downloads per channel (`stable`, `beta`): component, version,
+Minecraft version, download URL (a file in one of the releases here) and SHA-256. The Fern API reads it
+and serves it to the launcher. It is updated by `tools/publish-mod.ts` in the Fern source.
